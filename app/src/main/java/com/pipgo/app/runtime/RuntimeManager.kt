@@ -163,7 +163,10 @@ class RuntimeManager(
         override fun onReconnecting(attempt: Int) {
             val s = _state.value
             if (s is RuntimeState.Live || s is RuntimeState.Reconnecting) {
-                _state.value = RuntimeState.Reconnecting((s as? RuntimeState.Live)?.url ?: s.url.let { baseUrl() }, attempt)
+                val currentUrl = (s as? RuntimeState.Live)?.url
+                    ?: (s as? RuntimeState.Reconnecting)?.url
+                    ?: baseUrl()
+                _state.value = RuntimeState.Reconnecting(currentUrl, attempt)
             }
         }
 

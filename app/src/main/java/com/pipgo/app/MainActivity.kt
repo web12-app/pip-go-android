@@ -10,6 +10,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import com.pipgo.app.runtime.RuntimeManager
 import com.pipgo.app.runtime.RuntimeState
+import com.pipgo.app.qr.DiscoveryOverlay
+import com.pipgo.app.qr.QrScanOverlay
 import com.pipgo.app.settings.SettingsStore
 import com.pipgo.app.ui.ConnectScreen
 import com.pipgo.app.ui.ErrorScreen

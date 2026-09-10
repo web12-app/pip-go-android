@@ -1,6 +1,7 @@
 package com.pipgo.app.bridge
 
 import android.webkit.JavascriptInterface
+import org.json.JSONObject
 
 /**
  * Native bridge exposed to the WebView as `window.PipGoBridge`
