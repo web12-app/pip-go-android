@@ -4,11 +4,13 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import com.dokar.quickjs.QuickJs
+import com.dokar.quickjs.binding.define
 import com.pipgo.runtime.storage.PipGoStorage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.asCoroutineDispatcher
+import org.json.JSONObject
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import java.util.concurrent.Executors

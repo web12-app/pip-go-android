@@ -25,9 +25,9 @@ sealed class Op {
     data class PopScreen(override val id: String?) : Op()
     data class Http(override val id: String, val callId: String, val method: String, val url: String,
                     val headers: JSONObject, val body: String?, val timeoutMs: Long) : Op()
-    data class HttpCancel(override val id: String, val callId: String) : Op()
-    data class Timer(override val id: String, val callId: String, val kind: String, val delayMs: Long) : Op()
-    data class TimerClear(override val id: String, val callId: String) : Op()
+    data class HttpCancel(override val id: String?, val callId: String) : Op()
+    data class Timer(override val id: String?, val callId: String, val kind: String, val delayMs: Long) : Op()
+    data class TimerClear(override val id: String?, val callId: String) : Op()
     data class Log(override val id: String?, val level: String, val args: JSONArray) : Op()
 }
 

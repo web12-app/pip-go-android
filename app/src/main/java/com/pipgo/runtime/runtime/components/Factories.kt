@@ -49,7 +49,7 @@ class ListHost(context: Context) : RecyclerView(context) {
     val adapter = ItemTreeAdapter(context)
     init {
         layoutManager = LinearLayoutManager(context)
-        adapter = this.adapter
+        setAdapter(this.adapter)
         overScrollMode = View.OVER_SCROLL_NEVER
     }
 }
