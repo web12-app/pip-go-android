@@ -47,6 +47,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
 
+    // View-space Material components for the native renderer (§10/§41)
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
