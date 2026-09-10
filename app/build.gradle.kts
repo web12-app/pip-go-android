@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.pipgo.app"
+    namespace = "com.pipgo.runtime"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.pipgo.app"
+        applicationId = "com.pipgo.runtime"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -52,8 +52,11 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
 
-    // WebView modern features (WebViewAssetLoader for offline cache fallback)
+    // WebView modern features (kept for the <WebView> native component, §40)
     implementation("androidx.webkit:webkit:1.10.0")
+
+    // Embedded JavaScript engine (§7) — QuickJS, prebuilt .so, ES2020
+    implementation("io.github.dokar3:quickjs-kt-android:1.0.15")
 
     // Dev server WebSocket + bundle download
     implementation("com.squareup.okhttp3:okhttp:4.12.0")

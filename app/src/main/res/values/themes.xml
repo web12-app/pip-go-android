@@ -1,5 +1,6 @@
 <resources>
-    <style name="Theme.PipGo" parent="android:Theme.Material.NoActionBar">
+    <!-- Material3 theme required by Material components (§41) -->
+    <style name="Theme.PipGo" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">#0F172A</item>
         <item name="android:navigationBarColor">#0F172A</item>
         <item name="android:windowBackground">#0F172A</item>
