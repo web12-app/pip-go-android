@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.pipgo.runtime"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.pipgo.runtime"
